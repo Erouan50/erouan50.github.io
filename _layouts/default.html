@@ -11,7 +11,8 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
-
+    <script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
 </head>
 <body>
 
@@ -19,8 +20,8 @@
     <div class="site">
         <div class="header">
             <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-            <a class="extra" href="/cv/cv.html">cv</a>
+            <a id="home-link" class="extra" href="/">home</a>
+            <a id="cv-link" class="extra" href="/cv/cv.html">cv</a>
         </div>
 
         {{ content }}
